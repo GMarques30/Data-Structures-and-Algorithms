@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinaryTree/BinaryTree.iml" filepath="$PROJECT_DIR$/BinaryTree/BinaryTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/BubbleSort/BubbleSort.iml" filepath="$PROJECT_DIR$/BubbleSort/BubbleSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/CycleLinkedList/CycleLinkedList.iml" filepath="$PROJECT_DIR$/CycleLinkedList/CycleLinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Data-Structures-and-Algorithms.iml" filepath="$PROJECT_DIR$/.idea/Data-Structures-and-Algorithms.iml" />
