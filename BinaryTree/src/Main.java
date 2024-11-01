@@ -46,5 +46,8 @@ public class Main {
 
     List<Integer> resultInorder = tree.inorderTraversal();
     System.out.println("Inorder traversal: " + resultInorder);
+
+    List<Integer> resultPostorder = tree.postorderTraversal();
+    System.out.println("Postorder traversal: " + resultPostorder);
   }
 }
