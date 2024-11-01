@@ -60,4 +60,18 @@ public class BinaryTree {
         this._preorder_recursive(node.right, result);
       }
   }
+
+  public List<Integer> inorderTraversal() {
+    List<Integer> result = new ArrayList<>();
+    this._inorder_recursive(this.root, result);
+    return result;
+  }
+
+  private void _inorder_recursive(TreeNode node, List<Integer> result) {
+    if(node != null) {
+      this._inorder_recursive(node.left, result);
+      result.add(node.data);
+      this._inorder_recursive(node.right, result);
+    }
+  }
 }

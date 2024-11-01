@@ -41,7 +41,10 @@ public class Main {
       }
     }
 
-    List<Integer> result = tree.preorderTraversal();
-    System.out.println("Preorder traversal: " + result);
+    List<Integer> resultPreorder = tree.preorderTraversal();
+    System.out.println("Preorder traversal: " + resultPreorder);
+
+    List<Integer> resultInorder = tree.inorderTraversal();
+    System.out.println("Inorder traversal: " + resultInorder);
   }
 }
