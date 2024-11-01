@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinaryTree {
   public TreeNode root;
 
@@ -44,4 +47,17 @@ public class BinaryTree {
     }
   }
 
+  public List<Integer> preorderTraversal() {
+    List<Integer> result = new ArrayList<>();
+    this._preorder_recursive(this.root, result);
+    return result;
+  }
+
+  private void _preorder_recursive(TreeNode node, List<Integer> result) {
+      if(node != null) {
+        result.add(node.data);
+        this._preorder_recursive(node.left, result);
+        this._preorder_recursive(node.right, result);
+      }
+  }
 }

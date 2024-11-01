@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
   public static void main(String[] args) {
     BinaryTree tree = new BinaryTree();
@@ -38,5 +40,8 @@ public class Main {
         System.out.println("Valor " + valor + " não encontrado na árvore.");
       }
     }
+
+    List<Integer> result = tree.preorderTraversal();
+    System.out.println("Preorder traversal: " + result);
   }
 }
