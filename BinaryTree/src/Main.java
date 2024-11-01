@@ -49,5 +49,13 @@ public class Main {
 
     List<Integer> resultPostorder = tree.postorderTraversal();
     System.out.println("Postorder traversal: " + resultPostorder);
+
+    for (int valor : valoresParaBuscar) {
+      if (tree.dfs(valor)) {
+        System.out.println("Valor " + valor + " encontrado na árvore através de DFS.");
+      } else {
+        System.out.println("Valor " + valor + " não encontrado na árvore através de DFS.");
+      }
+    }
   }
 }
