@@ -57,5 +57,13 @@ public class Main {
         System.out.println("Valor " + valor + " não encontrado na árvore através de DFS.");
       }
     }
+
+    for (int valor : valoresParaBuscar) {
+      if (tree.bfs(valor)) {
+        System.out.println("Valor " + valor + " encontrado na árvore através de BFS.");
+      } else {
+        System.out.println("Valor " + valor + " não encontrado na árvore através de BFS.");
+      }
+    }
   }
 }

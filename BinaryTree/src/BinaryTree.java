@@ -1,4 +1,6 @@
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 public class BinaryTree {
@@ -58,6 +60,19 @@ public class BinaryTree {
     }
     if(this._dfs_recursive(node.left, data)) return true;
     if(this._dfs_recursive(node.right, data)) return true;
+    return false;
+  }
+
+  public boolean bfs(int data) {
+    if(this.root == null) return false;
+    Deque<TreeNode> deque = new ArrayDeque<>();
+    deque.add(this.root);
+    while(!deque.isEmpty()) {
+      TreeNode node = deque.pollFirst();
+      if(node.data == data) return true;
+      if(node.left != null) deque.add(node.left);
+      if(node.right != null) deque.add(node.right);
+    }
     return false;
   }
 
